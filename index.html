@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sensorā pērle</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f7f7f7;
+            color: #222;
+        }
+
+        .page {
+            width: 100%;
+            max-width: 520px;
+            min-height: 100vh;
+            margin: 0 auto;
+            background: white;
+        }
+
+        /* Augšējā daļa */
+        .header {
+            background: linear-gradient(180deg, #b8f3f2 0%, #dffafa 100%);
+            padding: 45px 25px 35px;
+            text-align: center;
+        }
+
+        /* Logo */
+        .logo {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            background: white;
+            border: 3px solid #73d9d8;
+            overflow: hidden;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 25px;
+            font-weight: bold;
+            color: #174d91;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+
+        }
+
+        .company-name {
+            font-size: 32px;
+            font-weight: 500;
+            margin: 10px 0;
+        }
+
+        .description {
+            font-size: 17px;
+            color: #777;
+            margin: 0;
+        }
+
+        /* Satura daļa */
+        .content {
+            padding: 30px 22px 50px;
+        }
+
+        .find-title {
+            font-size: 25px;
+            margin: 0 0 20px;
+            font-weight: 500;
+        }
+
+        /* Pogas */
+        .social-button {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #222;
+
+            background: white;
+            border-radius: 12px;
+
+            padding: 18px 18px;
+            margin-bottom: 15px;
+
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+
+            transition: transform 0.15s, box-shadow 0.15s;
+        }
+
+        .social-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 16px rgba(0,0,0,0.13);
+        }
+
+        .icon {
+          
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 17px;
+        }
+        .icon img {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+        }
+
+        .instagram-icon img{
+            border-radius: 0%;
+        }
+
+        .button-text {
+            flex: 1;
+            font-size: 19px;
+            font-weight: 500;
+        }
+
+        .arrow {
+            font-size: 28px;
+            color: #777;
+        }
+
+        /* Mazāks ekrāns */
+        @media (max-width: 400px) {
+
+            .company-name {
+                font-size: 27px;
+            }
+
+            .logo {
+                width: 150px;
+                height: 150px;
+            }
+
+            .find-title {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="page">
+
+    <!-- AUGŠDAĻA -->
+    <div class="header">
+
+        <div class="logo">
+            <img src="logo.jpeg" alt="logo">
+        </div>
+
+        <!-- Nosaukums -->
+        <div class="company-name">
+            Sensorā pērle
+        </div>
+
+        <!-- aprakstu -->
+        <p class="description">
+            Diānas Rozenfeldes individuālprakse
+        </p>
+
+    </div>
+
+
+    <!-- POGAS -->
+    <div class="content">
+
+        <div class="find-title">
+            Find me on
+        </div>
+
+
+        <!-- FACEBOOK -->
+        <a class="social-button"
+           href="https://www.facebook.com/p/Sensor%C4%81-P%C4%93rle-61569544276253/?locale=lv_LV"
+           target="_blank">
+
+            <div class="icon">
+                <img src="facebook.png" alt="facebook">
+            </div>
+
+            <div class="button-text">
+                Facebook
+            </div>
+
+            <div class="arrow">
+                →
+            </div>
+
+        </a>
+        <!-- INSTAGRAM -->
+        <a class="social-button"
+           href="https://www.instagram.com/sensora_perle/"
+           target="_blank">
+
+            <div class="icon instagram-icon">
+                <img src="instagram.png" alt="instagram">
+            </div>
+
+            <div class="button-text">
+                Instagram
+            </div>
+
+            <div class="arrow">
+                →
+            </div>
+
+        </a>
+
+
+        <!-- GOOGLE -->
+        <a class="social-button"
+           href="https://www.google.com/search?kgmid=/g/11yfzj5p89&hl=lv-LV&q=Sensor%C4%81+p%C4%93rle+(Di%C4%81na+Rozenfelde),izgl%C4%ABt%C4%ABbas+un+skolas+psihologs+(p%C4%93c+pieraksta!)&shem=epsd1,ltae,rimspwouoe&shndl=30&source=sh/x/loc/osrp/m1/2&kgs=14dc84bdf117d9eb&utm_source=epsd1,ltae,rimspwouoe,sh/x/loc/osrp/m1/2"
+           target="_blank">
+
+            <div class="icon">
+                <img src="google.png" alt="google">
+            </div>
+
+            <div class="button-text">
+                Google Review
+            </div>
+
+            <div class="arrow">
+                →
+            </div>
+
+        </a>
+
+         <!-- DU -->
+        <a class="social-button"
+           href="https://du.lv/aktualitates/daugavpils-universitate-atklata-dianas-rozenfeldes-individualas-prakses-telpa-sensora-perle/"
+           target="_blank">
+
+            <div class="icon">
+                <img src="logo.jpeg" alt="DU">
+            </div>
+
+            <div class="button-text">
+                Papildinformācija
+            </div>
+
+            <div class="arrow">
+                →
+            </div>
+
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
